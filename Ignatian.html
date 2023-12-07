@@ -101,7 +101,7 @@
 
         #article-header h1 {
             font-size: 36px;
-            margin-top: 10px;
+            margin-top: 100px;
         }
 
         #article-content {
@@ -112,7 +112,7 @@
 
         #article-image {
             width: 100%;
-            max-height: 400px;
+            max-height: 50%;
             object-fit: cover;
             margin-top: 20px;
         }
@@ -130,39 +130,35 @@
             margin-top: 20px;
             opacity: 0;
             animation: fadeIn 2s ease-in-out forwards;
-            animation-delay: 3s;
+            animation-delay: 0s;
         }
 
-        .contact-info {
+        .contact-info-left {
             text-align: left;
             max-width: 300px;
-            margin-left: 20px;
+            margin-left: 20px; /* Adjusted margin for consistent spacing */
         }
 
-        .contact-info p {
-            margin-bottom: 8px;
+        .contact-info-left p {
+            margin-bottom: 8px; /* Adjusted margin for consistent spacing */
         }
 
-        .social-media {
+        .contact-info-right {
             text-align: right;
+            max-width: 300px;
+            margin-right: 20px; /* Adjusted margin for consistent spacing */
         }
 
-        .social-media a {
-            color: #fff;
-            margin-right: 20px;
-            text-decoration: none;
-            transition: color 0.3s ease-in-out;
+        .contact-info-right p {
+            margin-bottom: 8px; /* Adjusted margin for consistent spacing */
         }
-
-        .social-media a:hover {
-            color: #bbb;
-        }
+       
 
         #article-image {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
-            margin-top: 20px;
+            display: block;
+            margin: 0 auto;
+            width: auto;
+            max-height: 600px;
         }
 
         #image-caption {
@@ -171,7 +167,7 @@
             font-style: italic;
             opacity: 0;
             animation: fadeIn 2s ease-in-out forwards;
-            animation-delay: 3s;
+            animation-delay: 0s;
         }
     </style>
 </head>
@@ -186,49 +182,55 @@
 
     <div id="main-container">
         <div id="article-header">
-            <h1>Ignatian Spirituality</h1>
+            <h1>The Ignatian Spirituality</h1>
+        </div>
+
+        <div id="article-author">
+            <p>Jasper MC Solilap</p>
         </div>
 
         <div id="article-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at fermentum nisl. Sed ut dignissim risus, a
-                tristique velit. Vivamus sagittis, lacus sed tincidunt sagittis, velit orci varius lectus, nec venenatis
-                purus arcu nec sapien. Integer hendrerit fermentum arcu a dapibus. Nullam interdum ligula at fermentum
-                sollicitudin. Etiam at varius velit, eu facilisis turpis. Curabitur sit amet tortor vestibulum, feugiat
-                sapien eget, laoreet quam.</p>
+            <p>First, Let's talk about St. Ignatius of Loyola (1491 to 1556), The Spanish Priest who established the Society of Jesus in 1540. 
+                He created the Spiritual Exercises, the foundation of Ignatian spirituality, due to his soldier experiences and subsequent spiritual conversion. 
+                These practices, which involve prayer, introspection, and discernment, assist people in strengthening their relationship with God. </p>
 
-            <p>Nullam sed arcu quis odio dignissim mollis a ac erat. In hac habitasse platea dictumst. Vivamus eu
-                aliquet
-                sem, ac auctor nisl. Sed vel metus a dui ultrices feugiat. Duis scelerisque, lacus nec lacinia feugiat,
-                lacus dolor eleifend lectus, eu aliquet velit dolor a risus. Integer accumsan elit in arcu ultrices
-                scelerisque. Suspendisse potenti. Suspendisse ut vestibulum odio, in dapibus mi.</p>
+            <p>Next, our book. A book titled "Hearts on Fire: Praying with Jesuits" gathers 117 prayers rooted in Ignatian spirituality, the most influential spiritual tradition of the modern era. 
+                An SJ named Michael Harter assembled the book. It contains prayers composed by about forty Jesuits from the Society's founding to the present. Ignatian spirituality, 
+                which affirms that God is present in everything and everywhere at all times, is given voice by the prayers. 
+                The "four weeks" of St. Ignatius' Spiritual Exercises inspire the blessings in this book.</p>
 
-            <p>Phasellus mattis augue id nunc ultricies, eu iaculis nisi hendrerit. Maecenas tristique, quam vel
-                aliquet
-                gravida, tellus ligula venenatis libero, non bibendum arcu justo ut neque. Aenean at mauris eu urna
-                scelerisque finibus. In hac habitasse platea dictumst. Aliquam ut ex et nulla hendrerit aliquet. Vivamus
-                ut
-                bibendum arcu, non fermentum augue. Fusce in erat et odio dapibus fringilla eu et mi. Nam sagittis, elit
-                nec bibendum sollicitudin, risus odio imperdiet justo, eu interdum arcu augue nec justo.</p>
-        </div>
+                <p>The book's most remarkable feature is how it blends the ageless wisdom of Jesuit prayers with the potent spirituality of Ignatian spirituality. 
+                    Numerous readers have found resonance in the book's distinctive and inspirational viewpoint on prayer and spirituality. 
+                    I related most to the First Principle and Foundation. This place taught me to be grateful for everything God created for us. Furthermore, 
+                    we shouldn't limit our desires to what is tangible, emotional, or material. In my opinion, this suggests that rather than placing everything into it, 
+                    we ought to be thankful for whatever it is. We have this gift from God, and we ought to learn to be grateful for it.
+                    
+                </p>
 
-        <img id="article-image" src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+                <br>
 
-        <div id="image-caption">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img id="article-image" src="coverbook.jpg" alt="Your Image" width="640" height="960">
+
+
+                <div id="image-caption">
+                    <p>Hearts on Fire: Praying with Jesuits, the book Vlad read and shared to me.</p><br>
+                </div>
+
         </div>
 
     </div>
 
     <footer>
-        <div class="contact-info">
+        <div class="contact-info-left">
             <p>Created by: Vladimier Juliano</p>
             <p><a href="mailto:vpjuliano@addu.edu.ph" style="color: inherit; text-decoration: none;">vpjuliano@addu.edu.ph</a></p>
             <p>0933 879 9744</p>
         </div>
         <div style="border-left: 1px solid #fff; height: 70px;"></div>
-        <div class="social-media">
+        <div class="contact-info-right">
             <p>Written by: Jasper MC Solilap</p>
-            <p></p>
+            <p><a href="mailto:jmfsolilap@addu.edu.ph" style="color: inherit; text-decoration: none;">jmfsolilap@addu.edu.ph</a></p>
+            <p>0939 121 5279</p>
         </div>
     </footer>
 
